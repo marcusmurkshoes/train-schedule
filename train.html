@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+	<html lang="en-us">
+		<meta charset="UTF-8">
+	<head>
+		<title>Train Schedule!</title>
+
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="train.css">
+
+	</head>
+
+<body>
+<!-- Table -->
+<div id="tableAppend" class="container">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Train Name</th>
+        <th>Destination</th>
+          <th>Next Arrival</th>
+            <th>Frequency (min)</th>
+              <th>Minutes Away</th>
+    </tr>
+    </thead>
+       <tbody id="append">
+      <tr>
+        <td id="trainName"></td>
+        <td id="destination"></td>
+        <td id="frequency"> </td>
+        <td id="nextArrival"></td>
+        <td id="minutesAway"></td>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+	<!-- Train Schedule -->
+<form id="formBody">
+  <div class="panel panel-default" id="panell">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+   
+  <div class="form-group">
+    <label>Train Name</label>
+    <input class="inputs" id="trainStuff" type="input" name="train" class="form-control" placeholder="Destination">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Destination</label>
+    <input class="inputs"  type="input" class="form-control" placeholder="Frequency" id="destinationInput">
+  </div>
+   <div class="form-group">
+    <label>First Train Time (HH:mm-military time)</label>
+    <input class="inputs" id="firstTrainInput" type="input" name="train" class="form-control" placeholder="First Train Time (HH:mm-military time)">
+  </div>
+  <div class="form-group">
+    <label>Frequency (min)</label>
+    <input class="inputs" id="frequencyInput" type="input" name="train" class="form-control" placeholder="First Train Time (HH:mm-military time)">
+  </div>
+   
+  <button id="submit" type="button" class="btn btn-default">Submit</button>
+   </div>
+</div>
+</form>
+
+
+
+ <!--  Scripts -->
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://momentjs.com/downloads/moment.js"></script>
+<script src="./train.js"></script>
+</body>
+
+
